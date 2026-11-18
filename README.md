@@ -76,7 +76,7 @@ An app that reads your screen ought to say where that goes.
 - Card numbers, IDs, bank numbers, keys and passwords are swapped for placeholders before any check or model sees the text. What you type in a password box is never read.
 - Screenshots stay in memory and are thrown away when the card closes.
 - If you give it your details so it can catch a typo in your own email or school, they live in the Keychain on your Mac.
-- One thing can leave, and only if you leave it switched on. Very long fine print can get a second read from Gemini, through a small server that exists so the app never holds an API key. Only the masked text is sent. Settings → AI switches it off, and after that the only thing Snoopsie uses the network for is downloading the model once.
+- Nothing it reads is sent anywhere. The only thing Snoopsie uses the network for is downloading the model once.
 - Pages are treated as untrusted. Text that tries to give instructions to an AI is reported as a finding. It isn't followed.
 
 ## Install
@@ -154,8 +154,6 @@ After the checks, a small language model running on your Mac reads every line fo
 **Rules, then a model.** The built-in checks are plain Swift, deterministic, and done in about half a second, so the card has something to show straight away. Then Google's Gemma 4 runs on the Mac's GPU through [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM). There are two sizes. Fast (E2B) is the default. More careful (E4B) is an optional second download, and with both installed, Automatic uses the fast one for everyday pages and the careful one for fine print and documents.
 
 **The model doesn't get taken at its word.** It is handed a numbered list of lines and has to cite line numbers, so everything it claims can be checked against the page mechanically. A finding whose quote isn't on the page is dropped. A summary with a number, date or claim that isn't in the text is rejected. Where the model and a rule say the same thing, the rule wins.
-
-**The cloud is the exception, not the route.** With the switch on, a page goes to Gemini only when it is a hard case (fine print, a document check, a very long page) and the Mac would clearly be slower. If the server is slow or unreachable, the Mac reads the page instead and the review says so.
 
 **The slow part was thinking.** With Gemma's thinking mode left on, one review took about 158 seconds, nearly all of it hidden reasoning. With it off, 2 to 6.
 </details>
