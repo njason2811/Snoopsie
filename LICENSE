@@ -2,17 +2,35 @@ Copyright © 2026 Snoopsie Contributors. All Rights Reserved.
 
 Proprietary Software — All Rights Reserved
 
-This software and its associated source code, documentation, and related materials are proprietary and protected by applicable copyright laws.
+Snoopsie, its source code, the application published on this repository's Releases page, its name, mascot, pictures, documentation, and related materials (together, "Snoopsie") are proprietary and protected by applicable copyright laws.
 
-No license, express or implied, is granted to any individual or third party. Without prior written authorization from the applicable copyright holders, you may not:
+1. What you may do
 
-Copy, reproduce, or redistribute any portion of this software.
-Modify, adapt, or create derivative works.
-Sublicense, publish, or distribute the software.
-Use, sell, or otherwise commercially exploit the software.
+You may download the official Snoopsie application from this repository's Releases page and install and run it, unmodified, on Macs you own or control, for your own use. This permission is free of charge, personal, non-exclusive, and non-transferable.
 
-Access to this repository does not constitute permission to use, modify, distribute, or otherwise exploit its contents.
+2. What you may not do
+
+No other license, express or implied, is granted to any individual or third party. Without prior written authorization from the applicable copyright holders, you may not:
+
+- Copy, reproduce, or redistribute any portion of Snoopsie, including by hosting the application or its files anywhere else.
+- Modify, adapt, or create derivative works.
+- Reverse engineer, decompile, or disassemble the application, or attempt to obtain its source code, except where the law gives you that right regardless of this license.
+- Sublicense, publish, sell, rent, or offer Snoopsie or any part of it as a product or service, or otherwise commercially exploit it.
+- Use the Snoopsie name or mascot in a way that suggests your product or service is Snoopsie or is endorsed by its makers.
+- Remove or alter any copyright or license notice.
+
+Access to this repository, or to any copy of the source code however it was obtained, does not constitute permission to use, modify, distribute, or otherwise exploit its contents.
+
+The permission in section 1 ends automatically if you do any of the things listed in this section.
+
+3. Third-party software
+
+The application includes software, and downloads models, made by others. They are licensed by their owners under their own terms, which are listed in THIRD-PARTY-NOTICES.md. Nothing in this license limits your rights under those terms.
+
+4. No warranty
+
+SNOOPSIE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. Snoopsie points out things that may be worth a second look. It does not guarantee that any page, message, payment, or agreement is safe, correct, or complete, and nothing it shows is legal, financial, or professional advice. TO THE FULLEST EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDERS ARE NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF, OR INABILITY TO USE, SNOOPSIE.
 
 All rights not expressly granted are reserved by the applicable copyright holders.
 
-For licensing inquiries or permission requests, please contact the Snoopsie Contributors.
+For licensing inquiries or permission requests, please contact the Snoopsie Contributors through https://github.com/njason2811.
