@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 4 112 100" role="img" aria-labelledby="t">
+<title id="t">Snoopsie, a lilac gumdrop holding a magnifying glass</title>
+<!-- Snoopsie, ported from the SwiftUI drawing in Snoopsie/Theme.swift (same 100-pt grid, same numbers).
+     It blinks, and now and then has a look around. Reduce Motion stops all of it, as in the app. -->
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#AD99FF"/><stop offset="1" stop-color="#FF9ED4"/></linearGradient>
+</defs>
+<style>
+  .fig{transform-origin:42px 98px;animation:boing 11s linear infinite}
+  .eyes{transform-origin:42px 51px;animation:blink 4.3s linear infinite}
+  .pupils{animation:look 11s ease-in-out infinite}
+  .glass{transform:translate(87px,68px) rotate(-35deg);animation:sweep 11s ease-in-out infinite}
+  @keyframes blink{0%,93%{transform:scaleY(1)}95.5%{transform:scaleY(.08)}98%,100%{transform:scaleY(1)}}
+  @keyframes look{0%,50%{transform:translate(0,0)}55%,64%{transform:translate(4.5px,-.8px)}70%,80%{transform:translate(-3.5px,.8px)}86%,100%{transform:translate(0,0)}}
+  @keyframes sweep{0%,50%{transform:translate(87px,68px) rotate(-35deg)}55%,64%{transform:translate(88.5px,60px) rotate(-17deg)}70%,80%{transform:translate(85.5px,63px) rotate(-31deg)}86%,100%{transform:translate(87px,68px) rotate(-35deg)}}
+  @keyframes boing{0%,49.6%{transform:scale(1,1)}50.5%{transform:scale(1.06,.9)}52%{transform:scale(.96,1.06)}53.3%{transform:scale(1.01,.985)}55%,100%{transform:scale(1,1)}}
+  @media (prefers-reduced-motion:reduce){.fig,.eyes,.pupils,.glass{animation:none}}
+</style>
+<g class="fig">
+  <path d="M42,24Q40,12 50,12" fill="none" stroke="#AD99FF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M77,59C77,60.4 77,65.3 74.38,71.9C71.08,80.95 63.95,88.08 54.9,91.38C48.3,94 43.4,94 42,94C40.6,94 35.7,94 29.1,91.38C20.05,88.08 12.92,80.95 9.62,71.9C7,65.3 7,60.4 7,59C7,57.6 7,52.7 9.62,46.1C12.92,37.05 20.05,29.92 29.1,26.62C35.7,24 40.6,24 42,24C43.4,24 48.3,24 54.9,26.62C63.95,29.92 71.08,37.05 74.38,46.1C77,52.7 77,57.6 77,59Z" fill="url(#g)"/>
+  <ellipse cx="26" cy="35" rx="13" ry="6" fill="#fff" opacity=".3" transform="rotate(-18 26 35)"/>
+  <rect x="22.5" y="91.5" width="15" height="7" rx="3.5" fill="#FF9ED4"/>
+  <rect x="46.5" y="91.5" width="15" height="7" rx="3.5" fill="#FF9ED4"/>
+  <ellipse cx="19" cy="67" rx="5" ry="3" fill="#ff8ca8" opacity=".6"/>
+  <ellipse cx="65" cy="67" rx="5" ry="3" fill="#ff8ca8" opacity=".6"/>
+  <g class="eyes">
+    <ellipse cx="30" cy="51" rx="9.5" ry="10.5" fill="#fff"/>
+    <ellipse cx="54" cy="51" rx="9.5" ry="10.5" fill="#fff"/>
+    <g class="pupils">
+      <circle cx="30" cy="51" r="5" fill="#212121"/><circle cx="32" cy="48.5" r="1.75" fill="#fff"/>
+      <circle cx="54" cy="51" r="5" fill="#212121"/><circle cx="56" cy="48.5" r="1.75" fill="#fff"/>
+    </g>
+  </g>
+  <path d="M35,69Q42,75 49,69" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+  <g class="glass">
+    <rect x="-3" y="10.5" width="6" height="17" rx="3" fill="#474747"/>
+    <circle r="12.5" fill="#9ED6FF" opacity=".35"/>
+    <circle r="12.5" fill="none" stroke="#474747" stroke-width="4"/>
+    <circle cx="-5" cy="-5" r="3" fill="#fff" opacity=".75"/>
+  </g>
+</g>
+</svg>
