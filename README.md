@@ -171,4 +171,4 @@ After the checks, a small language model running on your Mac reads every line fo
 | Copy the findings | ⋯ → Copy Summary |
 </details>
 
-<p align="center"><sub>Built at HackUMass. © 2026 Snoopsie Contributors. All rights reserved; see <a href="LICENSE">LICENSE</a>. The source code is not public.</sub></p>
+<p align="center"><sub>Built at HackUMass by Jason Nguyen, Thomas Nguyen, An Le and Minh Dang Hoang. © 2026 Snoopsie Contributors. All rights reserved; see <a href="LICENSE">LICENSE</a>. The source code is not public.</sub></p>
